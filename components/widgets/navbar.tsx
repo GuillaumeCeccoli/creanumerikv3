@@ -3,10 +3,13 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="w-72 flex flex-row justify-around items-center mx-auto bg-white rounded-full absolute bottom-10">
+    <nav className="w-72 flex flex-row justify-around items-center mx-auto bg-white rounded-full absolute bottom-10 lg:top-1/3 lg:left-5 lg:flex-col lg:w-auto lg:justify-center lg:items-start lg:bg-transparent lg:text-white">
       {NAV_LINKS.map((link) => (
         <Link key={link.id} href={link.url}>
-          {<link.icon className="w-7 h-7 m-2" />}
+          <div className="flex flex-row items-center justify-center lg:clignotement">
+            {<link.icon className="w-7 h-7 m-2" />}
+            <span className="hidden lg:block">{link.title}</span>
+          </div>
         </Link>
       ))}
     </nav>

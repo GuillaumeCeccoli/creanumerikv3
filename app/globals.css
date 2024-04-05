@@ -72,6 +72,22 @@
   .background-image {
     background-image: url("/assets/texture.jpg");
   }
+
+  .clignotement {
+    animation: clignotement 3s infinite ease-in-out;
+  }
+
+  @keyframes clignotement {
+    0% {
+      color: white;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: white;
+    }
+  }
 }
 
 @layer base {
