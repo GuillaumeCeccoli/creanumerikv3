@@ -4,4 +4,5 @@ export type TNavLinks = {
   url: string;
   icon: IconType;
   title?: string;
+  size?: number;
 }

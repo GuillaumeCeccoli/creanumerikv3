@@ -77,15 +77,109 @@
     animation: clignotement 3s infinite ease-in-out;
   }
 
+  .transitionX {
+    animation: transitionX 1s ease-in-out;
+  }
+
+  .transitionY {
+    animation: transitionY 1s ease-in-out;
+  }
+
+  .transition-X {
+    animation: transition-X 1s ease-in-out;
+  }
+
+  .transition-Y {
+    animation: transition-Y 1s ease-in-out;
+  }
+
+  @keyframes transitionX {
+    0% {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transition-X {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transitionY {
+    0% {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transition-Y {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   @keyframes clignotement {
     0% {
       color: white;
     }
     50% {
-      color: blue;
+      color: rgb(141, 210, 234);
     }
     100% {
       color: white;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .sizeIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .shadowImg {
+    box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.4);
+  }
+
+  :root {
+    --animation-duration: 500ms;
+  }
+
+  .iconAnimation {
+    animation: slideInFromRight var(--animation-duration) ease-in-out forwards
+      var(--animation-delay);
+    opacity: 0;
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 }
