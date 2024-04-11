@@ -12,7 +12,7 @@ export default function Realisations() {
         Voici un petit aperçu de projets réalisés, que ce soit des projets
         personnels, des challenges thématiques ou clients.
       </p>
-      <div className="flex flex-col items-center lg:flex-row lg:flex-wrap">
+      <div className="flex flex-col items-center lg:flex-row lg:flex-wrap scaleTo">
         {REALISATIONS.map((realisation, id) => (
           <div
             key={id}
@@ -23,19 +23,19 @@ export default function Realisations() {
               <Image
                 src={realisation.image}
                 alt={realisation.title}
-                width={250}
-                height={250}
+                width={200}
+                height={200}
                 className="rounded-xl shadowImg xl:w-[300px]"
               />
-              <div className="w-[250px] h-full absolute -z-10 ml-4 mt-5 rounded-xl border-2 border-white bg-transparent top-0 xl:w-[300px]"></div>
+              <div className="w-[200px] h-full absolute -z-10 ml-4 mt-5 rounded-xl border-2 border-white bg-transparent top-0 xl:w-[300px]"></div>
             </div>
-            <div className="flex flex-col items-center text-center gap-4 w-10/12 py-4">
+            <div className="flex flex-col items-center text-center gap-4 w-10/12 py-4 text-sm lg:text-base">
               <p>{realisation.description}</p>
               <Link
                 href={realisation.href}
                 className="bg-gray-400 bg-opacity-50 my-4 p-2 rounded-lg hover:bg-[#50686f] transition-colors duration-500 ease-in-out"
               >
-                Voir le site
+                Lien du projet
               </Link>
             </div>
           </div>
