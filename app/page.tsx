@@ -1,6 +1,7 @@
 import HomePage from "@/components/widgets/home";
 import NavBar from "@/components/widgets/navbar";
 import Realisations from "@/components/widgets/realisations";
+import Skills from "@/components/widgets/skills";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         </section>
         <section className="mb-20">
           <Realisations />
+        </section>
+        <section className="mb-20">
+          <Skills />
         </section>
       </div>
     </main>

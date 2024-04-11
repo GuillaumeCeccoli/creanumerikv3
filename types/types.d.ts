@@ -14,3 +14,12 @@ export type TRealisations = {
   href: string;
   image: string;
 }
+
+export type TSkill = {
+  id: string;
+  title: string;
+  icon: IconType;
+  description: string;
+  subtitle: string;
+  tools: string[];
+}

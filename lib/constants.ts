@@ -1,5 +1,6 @@
-import { TNavLinks, TRealisations } from "@/types/types";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { TNavLinks, TRealisations, TSkill } from "@/types/types";
+import { FaFacebook, FaGithub, FaInstagram, FaLaptopCode, FaLinkedin } from "react-icons/fa";
+import { MdOutlineDesignServices } from "react-icons/md";
 import { TiBookmark, TiFolder, TiHomeOutline, TiMail } from "react-icons/ti";
 
 export const NAV_LINKS: TNavLinks[] = [
@@ -77,6 +78,25 @@ export const REALISATIONS: TRealisations[] = [
     description: "Calculateur d'IMC (Indice de Masse Corporelle), permettant de connaître sa corpulence.",
     href: "/",
     image: "/assets/imc.png"
+  }
+]
+
+export const SKILLS: TSkill[] = [
+  {
+    id: "s01",
+    title: "Design",
+    icon: MdOutlineDesignServices,
+    description: "Créations de maquettes pour sites et applications web.",
+    subtitle: "Mes outils",
+    tools: ["Figma", "Affinity Designer", "Penpot", "Affinity Photo"]
+  },
+  {
+    id:"s02",
+    title: "Developpement Web",
+    icon: FaLaptopCode,
+    description: "Intégration responsive et accessible, refonte, maintenance et optimisations.",
+    subtitle: "Mes outils",
+    tools: ["HTML/CSS", "JavaScript", "TypeScript", "NextJS", "React", "Tailwind CSS", "Git", "GitHub"]
   }
 ]
 
