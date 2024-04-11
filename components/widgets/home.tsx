@@ -34,7 +34,7 @@ export default function HomePage() {
             alt="Guillaume Ceccoli"
             width={200}
             height={200}
-            className="rounded-xl shadowImg z-10 2xl:w-[300px]"
+            className="rounded-xl z-10 2xl:w-[300px]"
           />
           <div className="w-[200px] h-full absolute ml-10 mt-5 rounded-xl border-2 border-white bg-transparent 2xl:w-[300px]"></div>
         </div>

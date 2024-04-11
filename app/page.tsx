@@ -6,7 +6,7 @@ import Skills from "@/components/widgets/skills";
 export default function Home() {
   return (
     <main className="relative background-image p-5 lg:p-10">
-      <div className="border border-white rounded-lg min-h-screen flex flex-col items-center">
+      <div className="lg:border lg:border-white rounded-lg min-h-screen flex flex-col items-center">
         <NavBar />
         <section className="mt-20">
           <HomePage />

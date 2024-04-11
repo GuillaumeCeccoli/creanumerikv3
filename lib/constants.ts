@@ -12,13 +12,13 @@ export const NAV_LINKS: TNavLinks[] = [
   },
   {
     id: "projects",
-    url: "/realisations",
+    url: "/#projects",
     icon: TiFolder,
     title: "Réalisations"
   },
   {
     id: "skills",
-    url: "/",
+    url: "/#skills",
     icon: TiBookmark,
     title: "Compétences"
   },
@@ -33,25 +33,25 @@ export const NAV_LINKS: TNavLinks[] = [
 export const SOCIAL_LINKS: TNavLinks[] = [
   {
     id: "facebook",
-    url: "/",
+    url: "https://www.facebook.com/profile.php?id=61557641909717",
     title: "Facebook",
     icon: FaFacebook,
   },
   {
     id: "instagram",
-    url: "/",
+    url: "https://www.instagram.com/creanumerik04/",
     title: "Instagram",
     icon: FaInstagram
   },
   {
     id: "linkedin",
-    url: "/",
+    url: "https://www.linkedin.com/in/guillaume-ceccoli/",
     title: "LinkedIn",
     icon: FaLinkedin
   },
   {
     id: "github",
-    url: "/",
+    url: "https://github.com/GuillaumeCeccoli",
     title: "GitHub",
     icon: FaGithub
   },
@@ -62,21 +62,21 @@ export const REALISATIONS: TRealisations[] = [
     id: "p01",
     title: "Site vitrine",
     description: "Site présentant l'activité d'une psychologue aux Pennes-Mirabeau, en remplacement de son ancien site.",
-    href: "/",
+    href: "https://www.ceccoli-delphine.fr/",
     image: "/assets/site-delphine.png"
   },
   {
     id:"p02",
     title: "Plateforme d'entraide",
-    description: "Ce projet communautaire a pour but de permettre à des personnes de proposer ou de demander de l'aide.",
-    href: "/",
+    description: "Plateforme d'entraide pour développeurs. Projet réalisé en équipe toujours en cours de développement.",
+    href: "https://dev-up.vercel.app/",
     image: "/assets/dev-up.png"
   },
   {
     id: "p03",
     title: "Calculateur d'IMC",
     description: "Calculateur d'IMC (Indice de Masse Corporelle), permettant de connaître sa corpulence.",
-    href: "/",
+    href: "https://imc-calculator-iota.vercel.app/",
     image: "/assets/imc.png"
   }
 ]
@@ -86,9 +86,9 @@ export const SKILLS: TSkill[] = [
     id: "s01",
     title: "Design",
     icon: MdOutlineDesignServices,
-    description: "Créations de maquettes pour sites et applications web.",
+    description: "Créations de maquettes pour sites et applications web. Réalisation de logos.",
     subtitle: "Mes outils",
-    tools: ["Figma", "Affinity Designer", "Penpot", "Affinity Photo"]
+    tools: ["Figma", "Penpot", "Affinity Designer", "Affinity Photo"]
   },
   {
     id:"s02",
