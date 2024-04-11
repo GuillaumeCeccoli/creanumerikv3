@@ -3,16 +3,12 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="w-72 flex flex-row justify-around items-center mx-auto bg-white rounded-full absolute bottom-10 lg:top-52 xl:left-28 lg:left-5 lg:flex-col lg:w-auto lg:justify-center lg:items-start lg:bg-transparent lg:text-white">
+    <nav className="z-20 w-[300px] flex flex-row justify-around items-center mx-auto bg-white fixed bottom-10 rounded-full md:absolute md:top-14 md:bottom-auto md:w-4/5 md:bg-transparent md:text-white">
       {NAV_LINKS.map((link) => (
         <Link key={link.id} href={link.url}>
-          <div className="flex flex-row items-center justify-center lg:clignotement">
-            {
-              <link.icon className="w-7 h-7 m-2 lg:w-10 lg:h-10 xl:w-14 xl:h-14" />
-            }
-            <span className="hidden lg:block lg:text-lg xl:text-xl">
-              {link.title}
-            </span>
+          <div className="flex flex-row items-center justify-center md:clignotement md:w-full">
+            {<link.icon className="w-7 h-7 m-2 lg:w-10 md:hidden" />}
+            <span className="hidden md:block md:text-lg">{link.title}</span>
           </div>
         </Link>
       ))}
