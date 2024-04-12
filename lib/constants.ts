@@ -24,7 +24,7 @@ export const NAV_LINKS: TNavLinks[] = [
   },
   {
     id: "mail",
-    url: "/",
+    url: "/#contact",
     icon: TiMail,
     title: "Contact"
   }
