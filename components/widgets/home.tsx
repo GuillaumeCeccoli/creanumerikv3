@@ -19,7 +19,7 @@ export default function HomePage() {
             target="_blank"
             style={
               {
-                "--animation-delay": `${0.2 + index * 0.2}s`,
+                "--animation-delay": `${0.5 + index * 0.2}s`,
               } as React.CSSProperties
             }
           >
@@ -28,7 +28,7 @@ export default function HomePage() {
         ))}
       </div>
       <div className="flex flex-col my-10 items-center md:mb-20 md:flex-row md:justify-between md:w-10/12 xl:my-28">
-        <div className="w-4/5 flex flex-row justify-around relative transition-Y md:w-2/5">
+        <div className="w-4/5 flex flex-row justify-around relative transitionX md:w-2/5">
           <Image
             src="/assets/Guillaume.jpeg"
             alt="Guillaume Ceccoli"
@@ -38,7 +38,7 @@ export default function HomePage() {
           />
           <div className="w-[200px] h-full absolute ml-10 mt-5 rounded-xl border-2 border-white bg-transparent 2xl:w-[300px]"></div>
         </div>
-        <p className="w-4/5 transitionX py-20 self-center md:text-sm md:w-3/6 md:mt-0 lg:w-3/6 xl:text-lg 2xl:text-xl">
+        <p className="w-4/5 transition-X py-20 self-center md:text-sm md:w-3/6 md:mt-0 lg:w-3/6 xl:text-lg 2xl:text-xl">
           Passionné par le développement et le design, j’aime relever de
           nouveaux défis et sortir de ma zone de confort. Qu’il s’agisse
           d’applications, de sites web sur-mesure ou encore d’une refonte, j’ai
