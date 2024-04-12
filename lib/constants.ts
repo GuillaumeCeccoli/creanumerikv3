@@ -94,7 +94,7 @@ export const SKILLS: TSkill[] = [
     id:"s02",
     title: "Developpement Web",
     icon: FaLaptopCode,
-    description: "Intégration responsive et accessible, refonte, maintenance et optimisations.",
+    description: "Réalisations d'applications et de sites web responsive, refonte et optimisations, SEO...",
     subtitle: "Mes outils",
     tools: ["HTML/CSS", "JavaScript", "TypeScript", "NextJS", "React", "Tailwind CSS", "Git", "GitHub"]
   }
