@@ -1,10 +1,13 @@
+"use client";
 import { SOCIAL_LINKS } from "@/lib/constants";
+import { useIntersectionObserver } from "@/lib/hook/useIntersectionObserverHook";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
 
 export default function Contact() {
+  const ref = useIntersectionObserver("apparition");
   return (
-    <article className="flex flex-col items-center">
+    <article className="flex flex-col items-center opacity-0" ref={ref}>
       <h2 className="text-white clignotement text-3xl">Contact</h2>
       <div className="flex flex-col items-center my-20 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center">
