@@ -147,7 +147,7 @@
   }
 
   .apparition {
-    animation: apparition 1s ease-in-out forwards;
+    animation: apparition 500ms ease-in-out forwards;
   }
 
   @keyframes slideInFromRight {
