@@ -81,29 +81,8 @@
     animation: transitionX 1s ease-in-out;
   }
 
-  .transitionY {
-    animation: transitionY 1s ease-in-out;
-  }
-
   .transition-X {
     animation: transition-X 1s ease-in-out;
-  }
-
-  .transition-Y {
-    animation: transition-Y 1s ease-in-out;
-  }
-
-  .scaleTo {
-    animation: scaleTo 0.5s ease-in-out;
-  }
-
-  @keyframes scaleTo {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
   }
 
   @keyframes transitionX {
@@ -124,28 +103,6 @@
     }
     100% {
       transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes transitionY {
-    0% {
-      transform: translateY(-200%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes transition-Y {
-    0% {
-      transform: translateY(200%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
       opacity: 1;
     }
   }
