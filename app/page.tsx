@@ -1,4 +1,5 @@
 import Contact from "@/components/widgets/contact";
+import Footer from "@/components/widgets/footer";
 import HomePage from "@/components/widgets/home";
 import NavBar from "@/components/widgets/navbar";
 import Realisations from "@/components/widgets/realisations";
@@ -21,6 +22,9 @@ export default function Home() {
         <section className="mb-20">
           <Contact />
         </section>
+        <footer className="mb-10">
+          <Footer />
+        </footer>
       </div>
     </main>
   );
