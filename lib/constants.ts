@@ -78,6 +78,13 @@ export const REALISATIONS: TRealisations[] = [
     description: "Calculateur d'IMC (Indice de Masse Corporelle), permettant de connaître sa corpulence.",
     href: "https://imc-calculator-iota.vercel.app/",
     image: "/assets/imc.png"
+  },
+  {
+    id:"p04",
+    title: "Liste de tâches",
+    description: "Un projet de test pour mieux comprendre l'utilisation d'une base de données supabase (projet en cours).",
+    href: "https://todolist-guillaume.vercel.app",
+    image: "/assets/todo.png"
   }
 ]
 
