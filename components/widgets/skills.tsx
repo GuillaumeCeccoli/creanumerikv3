@@ -1,16 +1,9 @@
-"use client";
 import { SKILLS } from "@/lib/constants";
-import { useIntersectionObserver } from "@/lib/hook/useIntersectionObserverHook";
 import { Separator } from "../ui/separator";
 
 export default function Skills() {
-  const ref = useIntersectionObserver("apparition");
   return (
-    <article
-      id="skills"
-      className="flex flex-col items-center text-white opacity-0"
-      ref={ref}
-    >
+    <article id="skills" className="flex flex-col items-center text-white">
       <h2 className="clignotement mb-10 text-3xl">Mes compétences</h2>
       <p className="text-white w-4/5 text-center lg:w-2/5 my-4">
         Voici les compétejnces que j&apos;ai acquises durant ma formation et mes

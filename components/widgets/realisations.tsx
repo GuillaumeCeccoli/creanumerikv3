@@ -1,17 +1,10 @@
-"use client";
 import { REALISATIONS } from "@/lib/constants";
-import { useIntersectionObserver } from "@/lib/hook/useIntersectionObserverHook";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Realisations() {
-  const ref = useIntersectionObserver("apparition");
   return (
-    <article
-      id="projects"
-      className="flex flex-col items-center opacity-0"
-      ref={ref}
-    >
+    <article id="projects" className="flex flex-col items-center">
       <h2 className="text-white text-3xl z-10 clignotement mb-10">
         Réalisations
       </h2>
